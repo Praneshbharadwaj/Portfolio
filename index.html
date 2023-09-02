@@ -1,0 +1,409 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet" />
+  <link rel="preconnect" href="//fdn.fontcdn.ir" />
+  <link rel="preconnect" href="//v1.fontapi.ir" />
+  <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+JP:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tailwind Portfolio</title>
+</head>
+
+<body>
+  <font face="SF Pro Display">
+    <!-- into section -->
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-indigo-900 dark:to-slate-900 relative overflow-hidden">
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-1">
+            <img class="w-10 h-20 transition-all hover:scale-110 rounded-full" src="./img/animated-p.gif" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-gray-200">
+              <font face="SF Pro Display">RANESH</font>
+            </span>
+          </div>
+          <font face="SF Pro Display">
+            <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-200 font-bold text-lg uppercase">
+              <li class="hover:text-gray-500">
+                <a href="#">homepage</a>
+              </li>
+              <li class="hover:text-gray-500">
+                <a href="#about">about me</a>
+              </li>
+              <li class="hover:text-gray-500">
+                <a href="#services">services</a>
+              </li>
+              <li class="hover:text-gray-500">
+                <a href="#works">projects</a>
+              </li>
+              <li class="hover:text-gray-500">
+                <a href="#contact">contact</a>
+              </li>
+            </ul>
+          </font>
+          <img id="moon" src="https://sourabhbhat.github.io/Tailwind-Portfolio/img/eclipse.gif"
+            class=" md:block w-10 cursor-pointer rounded-full" alt="" />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase font-semibold
+              hover:text-black">
+            <li>
+              <a id="hLink" href="#">homepage</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#services">services</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">projects</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="./img/NicePng_anime-boy-png_699243.png" alt="" />
+      <!-- circle -->
+      <div class="h lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 dark:bg-indigo-900 rounded-full -z-10
+          "></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-4xl sm:left-10 sm:text-lg md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+        <span class="text-gray-500">
+          <font face="SF Pro Display">INGENIOUS</font>
+        </span>
+        <font color="#CB4335 ">
+          <p id="text"></p>
+        </font>
+      </div>
+      <!-- texts -->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3 transition-all hover:scale-110">
+        <h1 class="font-medium text-indigo-900">
+          <font face="SF Pro Display" size="7">Hi, I'm Pranesh P</font>
+        </h1>
+        <p class="text-gray-400 font-semibold">
+          <font face="SF Pro Display">
+            The phrase "Better Design, Better Experience" encapsulates the idea that good design leads to a more
+            enjoyable, intuitive, and efficient user experience. By prioritizing the aesthetics, functionality, and
+            usability of a product, service, or website, designers can enhance the overall experience for their users.
+            Ultimately, better design can lead to increased user satisfaction, loyalty, and engagement
+          </font>
+        </p>
+        <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire Me</a>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+        <!-- left -->
+        <div class="relative">
+          <img class="h-2/4 absolute top-0 left-0 -z-10" src="./img/dots.png" alt="" />
+          <div class="h-full rounded-full overflow-hidden">
+            <img src="./img/pic.jpg " alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold text-2xl">
+            <font face="SF Pro Display">ABOUT ME</font>
+          </h1>
+          <h1 class="text-3xl font-semibold dark:text-white">
+            <font face="SF Pro Display">Better Design</font>
+          </h1>
+          <h1 class="text-3xl font-semibold dark:text-white">
+            <font face="SF Pro Display"> Better Experience </font>
+          </h1>
+          <p class="text-gray-400 text-xl font-medium">
+            Additionally, I have basic knowledge of programming languages such
+            as Java and C, and I am currently expanding my skillset by
+            learning JavaScript and UI/UX design. I am always seeking to
+            expand my skill set and take on new challenges to create visually
+            compelling content that tells a story and engages audiences.
+          </p>
+          <h2 class="text-gray-400 text-xl font-medium">HTML5</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md "></div>
+          </div>
+
+          <h2 class="text-gray-400 text-xl font-medium">CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            JS
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            TAILWIND
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            REACT JS
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            NODE
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            EXPRESS
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            MONGO DB
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 text-xl font-medium">
+            FIREBASE
+          </h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 text-3xl font-bold">SERVICES</h1>
+          <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+          <p class="w-1/2 text-center text-xl font-semibold text-gray-400">
+            My approach to website design is to create a website that
+            strengthens your company’s brand while ensuring ease of use and
+            simplicity for your audience
+          </p>
+        </div>
+
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+            <img class="will-change-auto h-10" src="./img/interactive-website-design-gif.gif" alt="" />
+            <h1 class="font-medium text-3xl dark:text-white">
+              INTERACTIVE WEBPAGES
+            </h1>
+            <p class="text-gray-400 text-xl">
+              I specialize in creating interactive websites for individuals and
+              small businesses
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+            <img class="will-change-auto" src="./img/jsgame.gif" alt="" />
+            <h1 class="font-medium text-3xl dark:text-white">
+              JS GAMES
+            </h1>
+            <p class="text-gray-400 text-xl">
+              I do have some experince in creating games usin JS for Web Pages
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- works -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 text-3xl font-bold">PORTFOLIO</h1>
+          <h1 class="text-3xl font-semibold text-gray-700 dark:text-white">
+            Works & Projects
+          </h1>
+          <p class="w-1/2 text-center text-xl text-gray-400 font-normal">
+            I have completed many projects using tools such as HTML CSS
+            and JS and some other projects using REACTJS,NODEJS,MONGODB,FIREBASE
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div class="md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-1 md:my-10 transition-all hover:scale-110">
+            <a href="https://praneshbharadwaj.github.io/Snake-Game/" target="_blank">
+              <img src="./img/jsgame.gif" height="100px" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">SNAKE GAME</font>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="https://praneshbharadwaj.github.io/Rock-Paper-Scissors/"><img
+                src="https://media.tenor.com/w-bp0jVZZX4AAAAC/rock-paper.gif" /></a>
+            <div class="text-3xl font-medium">
+              <font color="grey">ROCK PAPER SCISSORS</font>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="https://praneshbharadwaj.github.io/Tic-Tac-Toe/"><img
+                src="https://miro.medium.com/v2/resize:fit:1082/1*VRRjpA33vudDWtyRpxwdmA.gif" /></a>
+            <div class="text-3xl font-medium">
+              <font color="grey">TIC TAC TOE</font>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="https://praneshbharadwaj.github.io/Weather-App/" target="_blank">
+              <img src="https://assets.materialup.com/uploads/7e0032b0-d007-4303-b569-8058e7738803/preview.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">WEATHER APP</font>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="" target="_blank">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/1*nuB_cO4wdn3fyyrw5Gfo1A.png" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">MOVIE LAND</font>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="https://praneshbharadwaj.github.io/React-QUIZ/" target="_blank">
+              <img src="https://jschris.com/262a1fab0110d0d612ed69c9bb7c4e7e/project.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">REACT-QUIZ-APP</font>
+            </div>
+          </div>
+          <!-- card -->
+
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="" target="_blank">
+              <img src="https://www.fusioninformatics.com/blog/wp-content/uploads/2019/08/booking-animation.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">REACT-BOOKING-APP</font>
+            </div>
+          </div>
+          <!-- card -->
+
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="https://tripsavvydiscoveries.netlify.app/" target="_blank">
+              <img
+                src="https://cdn.dribbble.com/users/1171879/screenshots/8450064/media/124e0fe19d8482ad43919dda0d5e1963.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">TRIPADVISOR</font>
+            </div>
+          </div>
+          <!-- card -->
+
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="" target="_blank">
+              <img src="https://cdn.dribbble.com/users/942643/screenshots/4501246/dashboard.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">ADMIN-DASHBOARD</font>
+            </div>
+          </div>
+
+          <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
+            <a href="" target="_blank">
+              <img src="https://cdn.dribbble.com/users/83524/screenshots/1377865/iliquid_dribbble.gif" />
+            </a>
+            <div class="text-3xl font-medium">
+              <font color="grey">GARMENT-INDUSTRY</font>
+              <font color="grey">WORKTRACK</font>
+              <font color="grey">(ONGOING)</font>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold text-3xl">CONTACT</h1>
+          <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+          <p class="w-1/2 text-center text-gray-400 text-2xl">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div>
+        <!-- bottom -->
+        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="text" placeholder="Name Surname" />
+          <input
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="email" placeholder="Email" />
+          <textarea
+            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30" rows="10" placeholder="Message..."></textarea>
+          <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class=" w-full bg-gray-800  z-10 ">
+      <div class="container mx-auto py-5 flex justify-between items-center">
+        <div class="flex items-center gap-0 ">
+          <img src="./img/animated-p.gif" alt="" class="w-10 mr-3 h-auto rounded-full">
+          <span class="text-2xl ml-2 items-center text-white ">ranesh</span>
+        </div>
+        <span class=" hidden md:block  font-medium text-white"><span class="text-white">&copy;</span>2023 Desighned
+          with <span>&#9829</span> by Pranesh</span>
+        <div class="flex gap-2 text-3xl">
+          <a href="https://www.facebook.com/pranesh.bharadwaj.1"><span class="text-white hover:text-indigo-700"><i
+                class="fa-brands fa-facebook-f"></i></span></a>
+          <a href="https://www.instagram.com/pranesh_bharadwaj003/?next=%2F"><span
+              class="text-white hover:text-purple-700"><i class="fa-brands fa-instagram"></i></span></a>
+          <a href="https://www.linkedin.com/in/pranesh-p-bharadwaj-799a27248/"><span
+              class="text-white hover:text-blue-700"><i class="fa-brands fa-linkedin"></i></span></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"><span class="text-white hover:text-red-900"><i
+                class="fa-solid fa-envelope"></i></span></a>
+
+
+        </div>
+      </div>
+      <script src="./app.js"></script>
+      <script src="./autotyping.js"></script>
+  </font>
+</body>
+
+</html>
